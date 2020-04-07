@@ -1,3 +1,5 @@
+# A Team: application repository
+
 Application configuration for Team A!
 
 ```console
@@ -7,10 +9,10 @@ az k8sconfiguration create \
         --name team-a \
         --operator-instance-name team-a \
         --operator-namespace team-a \
-        --operator-params '--git-readonly --sync-garbage-collection' \
+        --operator-params '--git-readonly --sync-garbage-collection --disable-registry-scanning' \
         --enable-helm-operator \
         --helm-operator-chart-version 0.6.0 \
-        --helm-operator-params '--set helm.versions=v3' \
+        --helm-operator-chart-values '--set helm.versions=v3' \
         --repository-url https://github.com/slack/team-config.git
 ```
 
