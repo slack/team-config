@@ -9,7 +9,7 @@ az k8sconfiguration create \
         --name team-a \
         --operator-instance-name team-a \
         --operator-namespace team-a \
-        --operator-params '--git-readonly --sync-garbage-collection --disable-registry-scanning' \
+        --operator-params '--git-readonly --sync-garbage-collection' \
         --enable-helm-operator \
         --helm-operator-chart-version 0.6.0 \
         --helm-operator-chart-values '--set helm.versions=v3' \
