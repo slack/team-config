@@ -4,8 +4,8 @@ Application configuration for Team A!
 
 ```console
 az k8sconfiguration create \
-        --resource-group ${RESOURCE_GROUP} \
-        --cluster-name ${CLUSTER_NAME} \
+        --resource-group ConnectToArc \
+        --cluster-name NewCluster \
         --name team-a \
         --operator-instance-name team-a \
         --operator-namespace team-a \
