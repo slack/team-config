@@ -20,5 +20,5 @@ az k8sconfiguration create \
 az k8sconfiguration delete
         --resource-group AzureArc \
         --cluster-name ${CLUSTER_NAME} \
-        --name rudr-config
+        --name team-config
 ```
